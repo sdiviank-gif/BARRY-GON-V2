@@ -105,4 +105,5 @@ app.post("/webhook", async function(req, res) {
 });
 
 app.get("/", function(req, res) { res.send("BARRY-GON V2 is online."); });
+app.get("/ping", function(req, res) { res.status(200).send("pong"); });
 app.listen(3000, function() { console.log("BARRY-GON server running on port 3000"); });
